@@ -152,17 +152,24 @@
     width: 130px;
     height: auto;
   }
+  .body-destacado{
+    padding: 10px;
+
+  }
   .card-title{
     font-size: 10px;
     color: black;
   }
   .card-subtitle{
-    font-size: 10px;
+    font-size: 9px;
+    line-height:5px ;
     
 
   }
   .card-text{
     font-size: 9px;
+    line-height:5px ;
+    
   }
 
 
