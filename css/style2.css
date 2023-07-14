@@ -7,6 +7,8 @@
   --second-color:rgb(74, 193, 239); 
   --second-alpha-color:rgb(74, 193, 239, 0.75);
 
+  --footer-color: dimgrey;
+
   --bg-color:rgb(29, 94, 169);
   --bg-alpha-color:rgb(29, 94, 169, 0.75);
 
@@ -175,32 +177,47 @@
 
 
 
-
+  /* Footer movil  */ /* Footer movil  *//* Footer movil  */
 
   .footer-acsa {
-    background-color: rgb(39, 9, 104);
+    background-color:  var(--footer-color);
+    color: white !important;
   }
 
   .footer-acsa button{
-    background-color: rgb(39, 9, 104);
+    background-color: var(--footer-color);
+    color: white !important;
   }
 
   .accordion-item{
-    background-color: rgb(39, 9, 104);
+    background-color: var(--footer-color);
     border-radius: none !important;
+    color: white !important;
   }
    /* estilo del boton presionado  */
   
    .accordion-button{
-    background-color: rgb(39, 9, 104)!important;
+    background-color: var(--footer-color)!important;
     color: white !important;
+    font-weight:bold;
+    
     box-shadow: none !important; /* Para quitar el borde sombreado al presionar */
+
    
   }
 
   .collapsed{
-    background-color: rgb(39, 9, 104)!important;
+    background-color: var(--footer-color)!important;
     border-radius: none !important;
+    color: white !important;
+  }
+  .accordion-body div{
+    color: white;
+
+  }
+  .accordion-body div a{
+    text-decoration:none;
+    color:white;
   }
 
  
