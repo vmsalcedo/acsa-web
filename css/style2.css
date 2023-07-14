@@ -180,27 +180,30 @@
   /* Footer movil  */ /* Footer movil  *//* Footer movil  */
 
   .footer-acsa {
-    background-color:  var(--footer-color);
+    background-color: var(--first-color) ;
     color: white !important;
   }
 
   .footer-acsa button{
-    background-color: var(--footer-color);
+    background-color: ;
     color: white !important;
   }
 
   .accordion-item{
-    background-color: var(--footer-color);
+    background-color:rgb(13, 57, 107) ;
     border-radius: none !important;
     color: white !important;
   }
+
+
+
    /* estilo del boton presionado  */
   
    .accordion-button{
-    background-color: var(--footer-color)!important;
+    background-color: var(--first-color)!important;
     color: white !important;
-    font-weight:bold;
     
+
     
     box-shadow: none !important; /* Para quitar el borde sombreado al presionar */
 
@@ -208,12 +211,17 @@
   }
 
   .collapsed{
-    background-color: var(--footer-color)!important;
+    background-color: var(--first-color)!important;
     border-radius: none !important;
     color: white !important;
   }
+  .accordion-body{
+    background-color: rgb(13, 57, 107);
+  }
   .accordion-body div{
     color: white;
+    font-size: 14px;
+   
 
   }
   .accordion-body div a{
