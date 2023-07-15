@@ -7,7 +7,7 @@
   --second-color:rgb(74, 193, 239); 
   --second-alpha-color:rgb(74, 193, 239, 0.75);
 
-  --footer-color: dimgrey;
+ 
 
   --bg-color:rgb(29, 94, 169);
   --bg-alpha-color:rgb(29, 94, 169, 0.75);
@@ -70,6 +70,9 @@
     background: var(--second-color);
     color: black !important;
   }
+
+
+  /* botton whatsapp  */
 
   .whatsapp-button{
     position: fixed;
@@ -184,46 +187,27 @@
     color: white !important;
   }
 
-  .footer-acsa button{
-    background-color: ;
-    color: white !important;
-  }
-
-  .accordion-item{
-    background-color:rgb(13, 57, 107) ;
-    border-radius: none !important;
-    color: white !important;
-  }
-
-
-
+  
    /* estilo del boton presionado  */
   
    .accordion-button{
     background-color: var(--first-color)!important;
     color: white !important;
-    
-
-    
     box-shadow: none !important; /* Para quitar el borde sombreado al presionar */
 
    
   }
 
-  .collapsed{
-    background-color: var(--first-color)!important;
-    border-radius: none !important;
-    color: white !important;
-  }
+   
+  
   .accordion-body{
     background-color: rgb(13, 57, 107);
   }
-  .accordion-body div{
+  .accordion-body div {
     color: white;
-    font-size: 14px;
-   
-
+    font-size: 12px;
   }
+ 
   .accordion-body div a{
     text-decoration:none;
     color:white;
@@ -343,8 +327,9 @@
   /* Iconos de redes sociales en pc  */
 
 
-
   /* estilos login dropdown  */
+  /* estilos login dropdown  */
+
    .dropdown-acsa-login {
     position: relative;
     display: inline-block;
@@ -374,7 +359,7 @@
   top: 40px;
   background-color: white;
   min-width: 300px;
-  min-height:300px;
+  min-height:230px;
   z-index: 2;
   
   border-radius: 10px;
@@ -394,31 +379,35 @@
   background-color: var(--first-color);
   padding: 5px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
   margin-top: 10px;
   border-radius: 25px;
  
 }
 
-.dropdown-content-acsa-login div  button:hover{
-  background-color: rgb(29, 94, 169,0.9);
-  
+.btn-iniciar:hover{
+  background-color: rgba(17, 60, 109, 0.9);
+} 
 
-}
+
+
+
 
 
 .dropdown-content-acsa-login div  button:nth-child(3){
   background-color: rgb(255, 255, 255);
   padding: 5px;
   color: var(--first-color);
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid var(--first-color);
   
   margin-top: 10px;
   border-radius: 25px;
   
 }
+
+
 
 .dropdown-content-acsa-login div p:nth-child(4){
   text-align: center;
@@ -431,12 +420,8 @@
 
 
 
-.dropdown-content-acsa-login a:hover{
-  color: blue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
-}
 
+ /* estilo para ocultar o mostrar las ventanas */
 .dropdown-acsa-login:hover .dropdown-content-acsa-login {
   display: block;
 }
@@ -594,7 +579,7 @@
 
   /* boton de whatsapp */
 
-
+  /* boton de whatsapp pc  */
  .whatsapp-button{
   position: fixed;
   bottom: 120px;
@@ -605,7 +590,7 @@
   
   animation-name: animacion-whatsapp;
   animation-duration: 1s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 10;
 }
 
 @keyframes animacion-whatsapp{
@@ -769,6 +754,50 @@
 
   }
 
+  .card img{
+    
+    width: 200px;
+    height: auto;
+  }
+  .body-destacado{
+    padding: 20px;
+
+  }
+  .card-title{
+    font-size: 16px;
+    color: black;
+  }
+  .card-subtitle{
+    font-size: 12px;
+    line-height:10px ;
+    
+
+  }
+  .card-text{
+    font-size: 12px;
+    line-height:10px ;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .banner-3 {
     background-color: rgb(234,234,241);
@@ -816,14 +845,19 @@
 
    .footer-acsa-pc{
      display: block;
-     background-color: dimgrey;
+     background-color: var(--first-color);
      height: auto;
      color: rgb(8, 8, 8);
-     font-size: 15px;
+     font-size: 14px;
      
      
    }
    .footer-acsa-pc a{
+    text-decoration: none;
+    color: white;
+
+   }
+   .footer-acsa-pc p{
     text-decoration: none;
     color: white;
 
@@ -844,6 +878,8 @@
     font-size: 18px;
     letter-spacing: 1px;
    }
+
+   
 
 
   }
