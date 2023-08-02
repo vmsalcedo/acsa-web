@@ -272,7 +272,7 @@
 }
 
 .stock-producto{
-  padding: 5px 0 5px 0;
+  padding: 2px 0 3px 0;
   font-size: 14px;
 
 }
@@ -280,9 +280,9 @@
  
 }
 
-.recursos-producto > div{
-  
-  
+.body-recursos-producto{
+ padding-top: 10px;
+ padding-left: 10px;
 }
 .recursos-producto p{
   
@@ -305,13 +305,13 @@
 
 .precio1 {
   padding-top: 30px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600; 
    
 }
 
 .precio2{
-  font-size: 12px;
+  font-size: 10px;
 
 }
 
@@ -363,7 +363,7 @@
   padding-top: 20px;
 }
 .body-especificaciones-producto p{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -386,7 +386,7 @@
   padding-top: 30px;
 }
 .body-description2-product p{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
