@@ -194,13 +194,11 @@
 
 
 /*   ESTILOS PRODUCTO MOVIL  */
-/*   ESTILOSPRODUCTO MOVIL */
+/*   ESTILOS PRODUCTO MOVIL */
 
-
-.contenido-producto-pc{
-  background-color: rgb(236, 234, 243);
+.contenido-producto-movil{
+  background-color: #ECEAF3;
 }
-
 
 .contenido-main-producto {
   
@@ -222,7 +220,7 @@
   
 }
 .marca-codigo-producto{
-  padding: 4px 8px 4px 8px;
+  padding: 4px 25px 4px 25px;
 }
 .marca-producto{
   font-size: 14px ;
