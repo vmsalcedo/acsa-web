@@ -318,9 +318,15 @@
 
 }
 
+.stock-producto{
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+}
+
 
 .solicitar-cotizacion-producto{
-  padding: 12px;
+  
 }
 
 .solicitar-cotizacion-producto a {
@@ -1215,8 +1221,13 @@
 /*    CSS PRODUCTO 766  */
 /*    CSS PRODUCTO 766  */
 
+.contenido-producto-movil{
+  display: none;
+
+}
 
 .contenido-producto-pc{
+  display: block;
   background-color: rgb(236, 234, 243);
 }
 
