@@ -1766,8 +1766,14 @@
 /*    CSS PRODUCTO 992  */
 /*    CSS PRODUCTO 992  */
 
+.contenido-producto-movil{
+  display: none;
+
+}
+
 
 .contenido-producto-pc{
+  display: block;
   background-color: rgb(236, 234, 243);
 }
 
