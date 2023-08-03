@@ -275,8 +275,9 @@
   font-size: 14px;
 
 }
-.recursos-producto{
- 
+.recursos-producto {
+  padding-left: 10px;
+  
 }
 
 .body-recursos-producto{
@@ -326,7 +327,7 @@
   background-color: var(--first-color);
   color:white;
   font-size: 12px;  
-  padding: 10px;
+  padding: 10px 40px;
   border-radius: 25px;
   cursor: pointer;
   display: inline-block;
@@ -953,17 +954,23 @@
 
   }
 
+
+
+
+
+
+
+
+
  
   /* Productos   */ /* Productos a partir 766  */
   /* Productos   */ /* Productos a partir 766   */
 
   .barra-detalles {
     background-color: white;
-    height: 40px;
+    height: 20px;
   
   }
-
-  
 
   .barra-detalles div {
     font-size: 28px;
@@ -978,10 +985,12 @@
   .aside-productos {
     background-color:#f3f1f1;;
     margin-top: 10px;
+    padding: 0;
   }
-
+  /* contenido del lado derecho  paginacion y contenido de productos */
+  
   .contenido-titulos-productos {
-    background-color: #f3f1f1;
+    
     margin-bottom: 10px;
   }
 
@@ -999,33 +1008,245 @@
   
 
 
-
-
-
-  /* Acordeon de filtros   */
-  .accordion-filtro1 .accordion-button {
-    background-color: white !important;
-    color: var(--first-color) !important;
-    box-shadow: none !important; /* Para quitar el borde sombreado al presionar */
+ /* titulo de productos  */
+ .titulo-productos{
+    background-color: white;
+    height: auto;
+    margin-bottom: 2px;
   }
 
-  .accordion-body {
+  .titulo-productos div:nth-child(1){
+    font-size: 16px;  
+    padding:10px 0 10px 10px ;
+  }
+  .titulo-productos div:nth-child(2){
+    font-size: 16px;
+    padding:10px 0 10px 10px ;
+  }
+
+   /* Fin titulo de productos  */
+ 
+
+  .resultado-productos{
+    background-color: white;
+    height: auto;
+    font-size: 14px;
+    padding:10px 0 10px 10px ;
+    margin-bottom: 2px;
+  }
+
+  /* Filtro de Productos  */
+  .filtros-productos{
+    background-color:white;
+    height: auto;
+    margin-bottom: 2px;
+    font-size: 14px;
+  } 
+
+  .filtros-productos  .filtros-titulo {
+    padding:10px 10px 10px 10px ;
+ 
+  }
+  
+  /* botones del acordeon  */
+  .button-accordion-productos{
+    background-color: white !important ;
+    color: var(--first-color)!important;
+    padding: 10px 10px 10px 15px;
+    font-size: 14px;
+  }
+
+  .body-filtro-productos{
     background-color: white;
   }
-  .accordion-body div {
-    color: white;
+  /* contenido del filtro del acordeon */
+  .form-check-acsa-productos{
+    color: var(--first-color)!important  ;
+    font-size: 14px!important;
+  }
+
+  .descripcion-producto{
+    background-color: white;
+    height: auto;
+    font-size: 14px;
+    padding:10px 0 10px 10px ;
+  }
+
+
+
+  /* Imagen de la card de productos  */
+  .imagen-card-productos{
+    padding: 10px;
+    width: 80%;
+    height: auto;
+    transition: transform 0.4s;
+  }
+  
+  .imagen-card-productos:hover{
+    transform: scale(1.1);
+  }
+  
+
+  .body-productos {
+    padding: 10px;
+    
+  }
+  .card-title-productos {
+    font-size: 14px;
+    color:black;
+  }
+  .card-subtitle-productos {
     font-size: 12px;
+    line-height: 10px;
+  }
+  .card-text-productos {
+    font-size: 12px;
+    line-height: 10px;
   }
 
-  .accordion-body div a {
-    text-decoration: none;
-    color: white;
-  }
 
-  /*Fin Acordeon de filtros   */
+
+
+
+
+
+
 
   
-  .body-destacado {
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* acordeon de ordenar por  */
+
+  .ordenar-productos{
+    background-color: white;
+    color: var(--first-color);
+    font-size: 12px;
+    padding: 8px;
+    margin-left: 10px;
+    width: 15vh; 
+    border-bottom: 1px solid var(--first-color); 
+  }
+
+  .contenedor-contenido-productos-collapse{
+    position: absolute;
+  }
+
+  .contenido-productos-collapse{
+    position: absolute;
+    top: 100%;
+    z-index:10;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    width: 15vh;
+    font-size: 12px;
+    padding: 10px;
+   
+  }
+  .contenido-productos-collapse a{
+    text-decoration: none;
+    color: var(--first-color);  
+  }
+  
+  .contenido-productos-collapse div:hover{
+    background-color: #d3e7fc;   
+  }
+
+  .contenido-productos-collapse div{
+    margin: 10px 0;
+
+  }
+  
+   /* Fin de acordeon de ordenar por  */
+
+  /* paginacion productos   */
+  .contenedor-paginacion{
+    margin-top: 18px;
+    margin-right: 10px;
+    
+  }
+  .page-link{
+    font-size: 12px;
+    color: var(--first-color);
+  }
+    /* paginacion productos   */
+
+  
+
+
+
+
+    
+  
+  /* .body-destacado {
     padding: 20px;
   }
   .card-title {
@@ -1039,7 +1260,7 @@
   .card-text {
     font-size: 12px;
     line-height: 10px;
-  }
+  } */
 
   /* overlay para oscurecer la web */
 
@@ -1713,6 +1934,7 @@
     line-height: 10px;
   }
 
+  /* acordeon de ordenar productos  */
   .ordenar-productos{
     background-color: white;
     color: var(--first-color);
@@ -1731,7 +1953,7 @@
     position: absolute;
     top: 100%;
     z-index:10;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(109, 18, 18);
     
     margin-left: 10px;
     width: 25vh;
@@ -1760,6 +1982,8 @@
     
 
   }
+
+  /* acordeon de ordenar productos  */
 
   .contenedor-paginacion{
     margin-top: 18px;
