@@ -199,33 +199,27 @@
   /* Productos   */ /* Productos  version movil*/
   /* Productos   */ /* Productos version movil  */
 
+  /* div ocultos */
 .aside-productos{
   display: none;
+  
  }
 
  .contenedor-paginacion{
   display: none !important;
  }
 
- .ordenarpor-paginacion{
- 
+ .contenedor-ordenarpor-paginacion{
   display: none !important;
  }
 
+ .barra-detalles div {
+  display:none;
+ } 
 
-  .barra-detalles {
-    background-color: white;
-    height: 2px;
-  
-  }
+ /* div ocultos */
 
-  .barra-detalles div {
-    display: none; /* quitar en 768*/
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    
-  }
+
 
   .contenido-titulos-productos {
     background-color: #F3F1F1;
@@ -237,11 +231,12 @@
   .titulo-productos-movil {
     margin-top: 3px;
     padding-left: 20px;
+   padding-top: 2% ;
     background-color: white;
       
   }
   .titulo-productos-movil :nth-child(1){
-    font-size: 18px;
+    font-size: 22px;
     color: var(--text-gris);
     padding-top: 10px;
 
@@ -269,20 +264,18 @@
   background-color: white;
   
 }
+.filtroOrdenarPor-movil i{
+  padding: 0 10px;
+}
 
 .filtrarpor-movil{
- 
   font-size: 14px;
-  border: solid 1px var(--text-gris) ;
   cursor: pointer;
   padding: 5px 10px;
 }
 
 .ordenarx-movil{
-  
   font-size: 14px;
-  border: solid 1px var(--text-gris);
-
   cursor: pointer;
   padding: 5px 10px;
 }
@@ -1507,35 +1500,31 @@
   /* Productos   */ /* Productos a partir 766  */
   /* Productos   */ /* Productos a partir 766   */
 
-  .barra-detalles {
-    background-color: white;
-    height: 20px;
-  
+
+  /* div ocultos en 766  */
+  .titulo-productos-movil{
+    display: none;
   }
 
-  .barra-detalles div {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
+ .filtroOrdenarPor-movil{
+  display: none!important;
+ }
+ /* div ocultos en 766  */
+
+
 
   .main-productos{
     background-color: #f3f1f1;
+    padding-top: 20px;
   } 
 
-
- 
-  
    .contenedor-paginacion{
     display: block !important;
    }
 
-
-
   .aside-productos {
     display: block;
     background-color:#f3f1f1;;
-    margin-top: 10px;
     padding: 0;
   }
   /* contenido del lado derecho  paginacion y contenido de productos */
@@ -1544,12 +1533,16 @@
     
     margin-bottom: 10px;
   }
+  .contenedor-ordenarpor-paginacion{
+    display: block!important;
+    margin-bottom: 10px;
+  }
 
   .ordenarpor-paginacion {
     background-color: white ;
     height: 8vh;
-    margin-top: 10px;
-    
+    margin-top: 0;
+   
   }
 
   .contenido-productos {
@@ -1567,11 +1560,14 @@
   }
 
   .titulo-productos div:nth-child(1){
-    font-size: 16px;  
+    font-size: 16px; 
+    color: var(--text-gris); 
     padding:10px 0 10px 10px ;
   }
   .titulo-productos div:nth-child(2){
     font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
     padding:10px 0 10px 10px ;
   }
 
@@ -2301,22 +2297,19 @@
   }
 
 
-  
+  /* Productos 992 Productos 992   */
+  /* Productos 992 Productos 992   */
+  /* Productos 992 Productos 992   */
 
-  /* 992 */ /* 992 */ /* 992 */ /* 992 */
-   /* 992 */ /* 992 */ /* 992 */ /* 992 */
 
+  /* titulos productos */
   .titulo-productos{
     background-color: rgb(255, 255, 255);
-    height: auto;
-    
-    
-    
+    height: auto; 
   }
 
   .titulo-productos div:nth-child(1){
-    font-size: 20px;
-   
+    font-size: 18px;
     padding:10px 0 10px 20px ;
   }
   .titulo-productos div:nth-child(2){
@@ -2414,7 +2407,7 @@
     position: absolute;
     top: 100%;
     z-index:10;
-    background-color: rgb(109, 18, 18);
+    background-color: rgb(255, 255, 255);
     
     margin-left: 10px;
     width: 25vh;
