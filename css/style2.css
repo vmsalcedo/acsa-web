@@ -196,8 +196,8 @@
 /* Productos Movil  */
 
 
-  /* Productos   */ /* Productos movil*/
-  /* Productos   */ /* Productos movil  */
+  /* Productos   */ /* Productos  version movil*/
+  /* Productos   */ /* Productos version movil  */
 
 .aside-productos{
   display: none;
@@ -208,11 +208,9 @@
  }
 
  .ordenarpor-paginacion{
+ 
   display: none !important;
  }
-
-
-
 
 
   .barra-detalles {
@@ -229,17 +227,23 @@
     
   }
 
+  .contenido-titulos-productos {
+    background-color: #F3F1F1;
+    margin-bottom: 10px;
+    
+  }
 
+  /* Titulos de productos en movil  */
   .titulo-productos-movil {
-    margin-top: 10px;
+    margin-top: 3px;
     padding-left: 20px;
-    
-  
-    
+    background-color: white;
+      
   }
   .titulo-productos-movil :nth-child(1){
     font-size: 18px;
     color: var(--text-gris);
+    padding-top: 10px;
 
   }
   .titulo-productos-movil :nth-child(2){
@@ -247,15 +251,8 @@
     font-weight: 600;
     padding-bottom: 16px;
     color: var(--text-primary);
-
-    
-
   }
-
-
-
-
-
+ /* Fin Titulos de productos en movil  */
 
 
 
@@ -264,12 +261,14 @@
     padding: 0;
   } 
 
+  /* contenedor de filtar en movil  */
 .filtroOrdenarPor-movil {
-  padding: 5px 5px;
+  padding: 10px 5px;
+  margin-top: 3px; /* margen vertical */
+  margin-bottom: 7px;
+  background-color: white;
   
 }
-
-
 
 .filtrarpor-movil{
  
@@ -352,10 +351,7 @@
 
   /* contenido del lado derecho  paginacion y contenido de productos */
   
-  .contenido-titulos-productos {
-    
-    margin-bottom: 10px;
-  }
+ 
 
   .ordenarpor-paginacion {
     background-color: white ;
