@@ -1451,10 +1451,11 @@
 
 
 
-<div class="container-fluid main-productos">
-  <div class="container-lg  ">
-   <div class="row ">
-    <div class="col-3  aside-productos">
+<div class="container-fluid main-productos ">
+  <div class=" container-lg  g-0 ">
+   <div class="row g-0 ">
+    <!-- aside Productos  -->
+    <div class="col col-md-3 col-lg-3 col-xl-3  aside-productos">
       
       <div class="col-12 titulo-productos">
         <div >Control Industrial y Automatizacion</div>
@@ -1595,19 +1596,253 @@
 
       </div>
 
-      <!-- <div class="col-12 descripcion-producto">
+      <div class="col-12 descripcion-producto">
         <p>Descripcion de los productos</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, labore dolorem officiis minima aperiam inventore rerum mollitia itaque assumenda debitis a tempora iste velit quo quasi saepe consectetur consequuntur dignissimos?</p>
-      </div> -->
+      </div>
 
     </div>
   
-    
-    <div class="col-9 contenido-titulos-productos">
+     <!-- contenido titulos y productos card  -->
+    <div class="col-12  col-md-9 col-lg-9 col-xl-9 contenido-titulos-productos">
 
+
+
+      <!-- contenedor de filtro, ordenar para movil  -->
+
+      <div class="col-12 filtroOrdenarPor-movil d-flex     justify-content-around ">
+        <!-- boton de offcambas de Filtrar por  -->
+        <div class="filtrarpor-movil" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro" aria-controls="offcanvasRight"> <i class="bi bi-funnel"></i>Filtar por  </div>
+
+
+        <div class="offcanvas offcanvas-end offcambas-filtroordenar-acsa" tabindex="-1" id="offcanvasFiltro" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header header-offcambas-filtrar">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <!-- body filtros  -->
+             
+            <div class="col-12 body-offcambas-filtro ">
+        
+              
+              
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed button-accordion-productos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Marca
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body body-filtro-productos ">
+      
+                         <!-- check box  -->
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMarca1">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Bticino
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMarca2" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Amprobe
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMarca3" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Amprobe
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMarca4">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Amprobe
+                        </label>
+                      </div>
+      
+      
+      
+      
+      
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header ">
+                    <button class="accordion-button collapsed button-accordion-productos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Tipo de Producto
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body body-filtro-productos">
+      
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTipo1" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          General
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="fflexCheckTipo2" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Retail
+                        </label>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed button-accordion-productos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Precio
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body body-filtro-productos">
+      
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTipo1" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Hasta S/ 50
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="fflexCheckTipo2" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          S/ 50 - S/ 100
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTipo1" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          S/ 100 - S/ 250
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="fflexCheckTipo2" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          S/ 250 - S/ 500
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTipo1" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          S/ 500 - S/ 1000
+                        </label>
+                      </div>
+                      <div class="form-check form-check-acsa-productos">
+                        <input class="form-check-input" type="checkbox" value="" id="fflexCheckTipo2" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Desde S/ 1000
+                        </label>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="d-flex justify-content-around pt-5">
+
+              <button type="button link-acsa" class="btn btn-link">Limpiar filtro</button>
+
+              <button class="btn btn-primary boton-acsa " type="submit">Aplicar</button>
+             </div>
+      
+                
+      
+      
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- boton de off cambas de ordenar por  -->
+        <div class="ordenarx-movil" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOrdenarPor" aria-controls="offcanvasRight"><i class="bi bi-list-ol"></i>Ordenar por</div>
+
+        <div class="offcanvas offcanvas-end offcambas-filtroordenar-acsa" tabindex="-1" id="offcanvasOrdenarPor" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header header-offcambas-ordenar">
+            <h5 class="offcanvas-title " id="offcanvasRightLabel">Ordenar por </h5>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body body-offcambas-ordenar ">
+            <div><a href="">Precio de menor a Mayor</a> </div>
+            <div><a href="">Precio de mayor a menor</a></div>
+            <div><a href="">Recomendados</a></div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- offff -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- contenedor de ordenar y paginacion pc   -->
       <div class=" col-12 ordenarpor-paginacion d-flex justify-content-between align-items-center">
 
-
+        <!-- ordenar por   -->
         <div class="accordion accordion-flush" id="accordionOrdenasPor">
           
           <div class="">
@@ -1631,10 +1866,8 @@
           
         </div>
 
-
-
-
        
+        <!-- Paginacion  -->
    
         <div class="d-flex contenedor-paginacion">
           <ul class="pagination">
@@ -1665,10 +1898,11 @@
 
 
       <!-- CONTENIDO DE PRODUCTOS  -->
+
       <div class=" col-12 contenido-productos">
           <!-- grupo 1 -->
-        <div class="productos-acsa my-2 my-lg-3 my-xl-2" >
-          <div class="container pt-3">
+        <div class="productos-acsa my-1 my-lg-3 my-xl-2" >
+          <div class="container ">
             <div class="row g-1 ">
               <div class="col-6 col-md-6 col-lg-6 col-xl-3  d-flex justify-content-center">
                 <div class="card" style="width: 20rem" data-aos="fade-right">
@@ -1892,7 +2126,7 @@
 
           <!-- grupo 2 -->
 
-          <div class="container pt-3">
+          <div class="container p-1">
             <div class="row g-1 ">
               <div class="col-6 col-md-6 col-lg-6 col-xl-3  d-flex justify-content-center">
                 <div class="card" style="width: 20rem" data-aos="fade-right">
@@ -2144,7 +2378,7 @@
           <div class="accordion-item ">
             <h2 class="accordion-header ">
               <button class="accordion-button collapsed "  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Nuestros Localeszzz
+                Nuestros Locales
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
