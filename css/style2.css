@@ -215,15 +215,43 @@
 
   .barra-detalles {
     background-color: white;
-    height: 20px;
+    height: 2px;
   
   }
 
   .barra-detalles div {
+    display: none; /* quitar en 768*/
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1px;
+    
   }
+
+
+  .titulo-productos-movil div{
+    
+    margin-bottom: 2px;
+    padding:10px 10px 0 20px;
+  }
+  .titulo-productos-movil :nth-child(1){
+    font-size: 16px;
+
+  }
+  .titulo-productos-movil :nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+    
+
+  }
+
+
+
+
+
+
+
 
   .main-productos{
     background-color: #ffffff;
@@ -307,6 +335,7 @@
 }
 .boton-acsa {
   background-color: var(--first-color);
+  padding: 0px 45px;
   color: white !important;
 }
 
