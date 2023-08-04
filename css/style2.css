@@ -12,7 +12,7 @@
   --bg-alpha-color: rgb(29, 94, 169, 0.75);
 
   --bg-gradient-color: linear-gradient(to right, blue, pink);
-  --text-gris:#8b8989;
+  --text-gris:#5c5c5c;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap"); /*font-family: 'Poppins', sans-serif*/
@@ -273,7 +273,7 @@
 .filtrarpor-movil{
  
   font-size: 14px;
-  border: solid 1px ;
+  border: solid 1px var(--text-gris) ;
   cursor: pointer;
   padding: 5px 10px;
 }
@@ -281,7 +281,8 @@
 .ordenarx-movil{
   
   font-size: 14px;
-  border: solid 1px;
+  border: solid 1px var(--text-gris);
+
   cursor: pointer;
   padding: 5px 10px;
 }
