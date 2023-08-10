@@ -82,40 +82,107 @@
 
 /* botton whatsapp  */
 
-.whatsapp-button {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  color: green !important;
-  font-size: 50px;
-  z-index: 10;
+  /* boton de whatsapp */
 
-  background-position: center;
-  height: 50px;
-  width: 50px;
+  /* boton de whatsapp movil  */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 2px;
+    font-size: 16px;
+    
+    
+    z-index: 10;
 
-  animation-name: animacion-whatsapp;
-  animation-duration: 1s;
-  animation-iteration-count: 10;
-}
-@keyframes animacion-whatsapp {
-  0% {
-    transform: scale(1, 1) rotate(0deg);
+    animation-name: animacion-whatsapp;
+    animation-duration: 1s;
+    animation-iteration-count: 40;
   }
-  50% {
-    transform: scale(0.85, 0.85) rotate(5deg);
+
+  @keyframes animacion-whatsapp {
+    0% {
+      transform: scale(1, 1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.85, 0.85) rotate(0deg);
+    }
   }
-}
-.whatsapp-button div {
-  background-color: rgb(255, 255, 255);
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+
+  .whatsapp-button div {
+    background-color:#05ca6b;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 0%;
+    padding: 8px 10px ;
+    border-radius: 50px;
+  }
+
+
+
+/* off canvas izquierdo del menu movil  */
+.offcanvas-movil-items-menu-izquierdo{
+  background-color: var(--first-color);
+  padding: 0;
 }
 
-.whatsapp-button div i {
-  margin: 10px;
+.offcanvas-movil-items-menu-izquierdo ul li{
+  
+  margin: 10px 0px;
+  padding: 15px 0 ;
 }
+
+.offcanvas-movil-items-menu-izquierdo ul li:hover{
+  background-color: var(--first-color-hover);
+}
+
+.offcanvas-movil-items-menu-izquierdo ul li a{
+  font-size: 20px;
+}
+
+.iconos-offcanvas-movil{
+  padding-left: 10px;
+}
+.iconos-offcanvas-movil a i{
+  color: white;
+  font-size: 25px;
+}
+
+
+
+
+
+.offcanvas-movil-items-menu-derecho{
+  background-color: var(--first-color);
+  padding: 0;
+
+}
+
+.offcanvas-movil-items-menu-derecho ul li{
+  
+
+  padding: 5px 10px ;
+}
+.offcanvas-movil-items-menu-derecho ul li:hover{
+  background-color: var(--first-color-hover);
+}
+.offcanvas-movil-items-menu-derecho ul li a{
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* carousel  */
 
@@ -1144,7 +1211,7 @@
     position: absolute;
     right: 5px;
     top: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     min-width: 300px;
     min-height: 230px;
     z-index: 2;
@@ -1159,6 +1226,12 @@
     color: var(--first-color);
     font-size: 16px;
   }
+
+  .dropdown-content-acsa-login div  {
+    padding-left: 28px;
+
+  }
+
   .dropdown-content-acsa-login div button {
     background-color: var(--first-color);
     padding: 5px;
@@ -1188,6 +1261,7 @@
     text-align: center;
     margin-top: 12px;
     font-size: 10px;
+    padding-left: 0 ;
   }
 
   /* estilo para ocultar o mostrar las ventanas */
@@ -1267,7 +1341,7 @@
     color: var(--second-color);
   }
 
-  /* Barra inferior de contacto Pc */
+  /* Barra inferior de contacto Pc 768 */
 
   .barra-inferior {
     display: block;
@@ -1283,7 +1357,7 @@
     color: rgb(25, 2, 80) !important;
     font-weight: bold;
   }
-  /* Fin Barra inferior de contacto Pc */
+  /* Fin Barra inferior de contacto Pc 768*/
 
 
 
@@ -1337,14 +1411,15 @@
   .whatsapp-button {
     position: fixed;
     bottom: 120px;
-    right: 80px;
-
-    font-size: 80px;
+    right: 250px;
+    font-size: 28px;
+    
+    
     z-index: 10;
 
     animation-name: animacion-whatsapp;
     animation-duration: 1s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 20;
   }
 
   @keyframes animacion-whatsapp {
@@ -1352,15 +1427,18 @@
       transform: scale(1, 1) rotate(0deg);
     }
     50% {
-      transform: scale(0.85, 0.85) rotate(5deg);
+      transform: scale(0.85, 0.85) rotate(0deg);
     }
   }
 
   .whatsapp-button div {
-    background-color: white;
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
+    background-color:#05ca6b;
+    color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 0%;
+    padding: 10px 10px ;
+    border-radius: 50px;
   }
 
   /* barra de busqueda scroll  */
@@ -1760,7 +1838,7 @@
     position: absolute;
     display: none;
     background-color: rgb(255, 255, 255);
-    height: 50vh;
+    min-height: 100vh;
     z-index: 999;
     top: 0;
     left: 0;
@@ -1778,6 +1856,34 @@
   .menu-acsa-bienvenido div {
     cursor: pointer;
   }
+
+  .menu-acsa-contenido{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    color: var(--first-color);
+    font-weight: 600;
+
+  }
+
+  .menu-acsa-contenido div{
+   padding: 0 15px 0 15px;   
+  }
+  .menu-acsa-contenido a{
+    color: var(--first-color);
+    text-decoration: none;
+
+  }
+   
+  .menu-acsa-contenido div:hover{
+    background-color: rgb(252, 246, 246);
+    border-left: var(--first-color) solid 5px;
+
+  }
+
+
+
+
 
   .items-menu {
     height: 45px;
@@ -2220,6 +2326,28 @@
     background-color: rgb(236, 234, 243);
     border-left: var(--first-color) solid 5px;
   }
+
+
+   /* Barra inferior de contacto Pc 992 */
+
+   .barra-inferior {
+    display: block;
+    background-color: var(--first-color);
+    font-size: 15px;
+  }
+
+  .barra-inferior div div div a {
+    color: white;
+    text-decoration: none;
+  }
+  .barra-inferior div div div a:hover {
+    color: rgb(25, 2, 80) !important;
+    font-weight: bold;
+  }
+  /* Fin Barra inferior de contacto Pc 768*/
+
+
+
 
   /* Logo y background del Titulo de submenu */
   .submenu-logo {
