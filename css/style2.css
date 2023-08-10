@@ -87,7 +87,7 @@
   /* boton de whatsapp movil  */
   .whatsapp-button {
     position: fixed;
-    bottom: 50px;
+    bottom: 150px;
     right: 2px;
     font-size: 16px;
     
@@ -1096,6 +1096,13 @@
     font-size: 16px;
     letter-spacing: 1px;
   }
+  
+  .contenedor-footer-ubicanos-pc div :hover i{
+    color:  rgb(25, 2, 80);
+  }
+  .contenedor-footer-contactanos-pc div :hover i{
+    color:  rgb(25, 2, 80);
+  }
 
 
 
@@ -1411,8 +1418,8 @@
   .whatsapp-button {
     position: fixed;
     bottom: 120px;
-    right: 250px;
-    font-size: 28px;
+    right: 0;
+    font-size: 25px;
     
     
     z-index: 10;
@@ -2344,7 +2351,44 @@
     color: rgb(25, 2, 80) !important;
     font-weight: bold;
   }
-  /* Fin Barra inferior de contacto Pc 768*/
+  /* Fin Barra inferior de contacto Pc 992*/
+
+
+
+  /* boton de whatsapp pc  992  */
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+    font-size: 25px;
+    
+    
+    z-index: 10;
+
+    animation-name: animacion-whatsapp;
+    animation-duration: 1s;
+    animation-iteration-count: 20;
+  }
+
+  @keyframes animacion-whatsapp {
+    0% {
+      transform: scale(1, 1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.85, 0.85) rotate(0deg);
+    }
+  }
+
+  .whatsapp-button div {
+    background-color:#05ca6b;
+    color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 0%;
+    padding: 10px 10px ;
+    border-radius: 50px;
+  }
 
 
 
